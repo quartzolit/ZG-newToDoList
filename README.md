@@ -1,3 +1,5 @@
+A newer version of ToDoList - previous repository https://github.com/quartzolit/ZG-todolist
+
 # ZG-newTodolist
 
 Todo List is a functional Task Creator to help people organizing their tasks.
