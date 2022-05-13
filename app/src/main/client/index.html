@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/364428d876.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>ZG-ToDoList</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>ZG - To Do List</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="create-task">
+
+            <div class="container">
+    
+                <h3>Task Creation</h3>
+    
+                <form>
+                    <label>
+                        Task name: 
+                        <input id="add-name" class="input-data" type="text" name ="name" required placeholder="Task Name">
+    
+                    </label>
+                    <label>
+                        Task Description 
+                        <input id="add-description" class="input-data" type="text" name ="description" required placeholder="Task Description">
+                    </label>
+                    <label>
+                        Finish Date: 
+                        <input id="add-date" class="input-data" type="text" name = "finishDate" required placeholder="Digite a data do fim da atividade">
+                    </label>
+                    <label>
+                        Priority level: 
+                        <input id="data-screen" class="priority-screen" type="text" value = "1" readonly>
+                        <input  id="data-range" class="input-data" type="range" name = "priority" value="1" list = "priority-range" required min = "1" max = "6" step="1">
+                    </label>
+                    <label>
+                        Status: 
+                        <select id="add-status" name="Status" id="status-select">
+                            <option value="" ></option>
+                            <option value="To Do" class="to-do" selected>To Do</option>
+                            <option value="Doing" class="doing">Doing</option>
+                            <option value="Done" class="done">Done</option>
+                        </select>
+                    </label>
+    
+    
+                    <button class="add-button">Create New Task</button>
+                    
+                    
+                </form>
+                
+            </div>
+    
+        </section>
+        <section class="task-list">
+            <div class="container">
+                <h3>Task List</h3>
+                <div class="activity-list">
+                    
+                        
+                          
+
+                </div>
+                
+                <button class="clear-all-button">Clear Entire List</button>      
+                 
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <h6>Developed by Quartz - All Rights Reserved</h6>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

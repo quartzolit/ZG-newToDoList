@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #AAA;
+}
+
+header{
+    width: 100%;
+    background-color: #001111;
+    border-bottom: 2px solid #DDD;
+    
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h2{
+    color: #DDD;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    margin-left: 30px;
+}
+
+section h3{
+    color: #001111;
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.create-task{
+    flex: 1;
+}
+
+
+.create-task form{
+    display: flex;
+    flex-direction: column;
+    background-color: #DDD;
+    padding: 5px;
+    margin-top: 20px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.create-task label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-task input{
+    margin: 10px 5px;
+}
+
+.priority-screen{
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+input[type=range] {
+    height: 33px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #DDD;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #1A3D5C;
+    border-radius: 0px;
+    border: 1px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 3px #000000;
+    border: 4px solid #001111;
+    height: 22px;
+    width: 22px;
+    border-radius: 50px;
+    background: #DDD;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+
+  input[type=range]::-webkit-slider-thumb:hover{
+      background: #1A3D5C;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #1A3D5C;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #1A3D5C;
+    border-radius: 0px;
+    border: 1px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 3px #000000;
+    border: 4px solid #001111;
+    height: 22px;
+    width: 22px;
+    border-radius: 50px;
+    background: #DDD;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #1A3D5C;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #1A3D5C;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 3px #000000;
+    border: 4px solid #001111;
+    height: 22px;
+    width: 22px;
+    border-radius: 50px;
+    background: #DDD;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #1A3D5C;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #1A3D5C;
+  }
+
+
+
+.create-task select{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 150px;
+    display: flex;
+}
+
+.create-task option{
+    text-align: center;
+}
+
+.to-do{
+    color: #DDD;
+    font-size: 15px;
+    background-color: #AA0000;
+}
+
+.doing{
+    color: #001111;
+    background-color: #ffef08;
+    font-size: 15px;
+}
+
+.done{
+    color: #001111;
+    background-color: green;
+    font-size: 15px;
+}
+
+.create-task button{
+    border-radius: 5px;
+    background-color: #001111;
+    color: #DDD;
+}
+.task-list{
+    flex: 3;
+    margin: 0px 30px;
+}
+
+.task-list .container{
+    width: 100%;
+
+}
+
+.activity-list{
+    background-color: #DDD;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.task-list button{
+    border-radius: 5px;
+    background-color: #001111;
+    color: #DDD;
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #888;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.task h4{
+    margin: 0;
+    padding: 0;
+    margin: 10px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.task-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.task-content{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.task-left, .task-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.task-left{
+    margin-right: 10px;
+}
+
+.task-content label{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.task-content label div{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+.task-content i{
+    margin: 0;
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 10px;
+    padding: 0;
+    width: auto;
+    height: 30px;
+
+}
+.task-content i:hover{
+    display: block;
+    color: #880000 ;
+}
+
+.clear-all-button{
+    margin-top: 10px;
+    margin-bottom: 43px;
+    width: 150px;
+    height: 30px;
+}
+
+footer{
+    display: flex;
+    height: 28px;
+    background-color: #001111;
+    color: #DDD;
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+footer h6{
+    margin: 5px;
+}
+
+
+
+
+
